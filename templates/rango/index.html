@@ -16,7 +16,8 @@
 
                 <ul>
                 {% for category in categories %}
-                         <li>{{ category.name }}</li>
+                         <li><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a></li>
+                    <a href="/rango/add_category/">Add a New Category</a><br />
                 {% endfor %}
                 </ul>
 
